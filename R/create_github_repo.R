@@ -27,5 +27,9 @@ create_github_repo <- function(repo_name, is_project, private_token = private_to
     dir_create(here::here(glue("../{repo_name}/refs")))
     dir_create(here::here(glue("../{repo_name}/analysis")))
     dir_create(here::here(glue("../{repo_name}/output")))
+    bib_path <- here::here("../{repo_name}/refs/add.bib")
+    if(!file.exists(bib_path)) {
+      file.create(bib_path)
+    }
     print("the git code to push github on the clipboard!")
 }
