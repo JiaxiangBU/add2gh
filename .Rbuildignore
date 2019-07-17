@@ -1,2 +1,4 @@
 ^add2gh\.Rproj$
 ^\.Rproj\.user$
+^README\.Rmd$
+^R/dev_history\.R$
