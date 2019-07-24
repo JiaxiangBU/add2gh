@@ -1,4 +1,5 @@
 #' Create a GitHub repository by one function.
+#' @export
 create_github_repo <- function(repo_name, is_project, private_token = private_token, username = "JiaxiangBU") {
     glue(
         'curl -i -H "Authorization: token {private_token}" -d \'{{"name": "{repo_name}", "auto_init": false, "private": true}}\' https://api.github.com/user/repos'
