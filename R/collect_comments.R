@@ -2,7 +2,7 @@
 collect_comments <-
     function(url = "https://github.com/JiaxiangBU/add2gh/issues/2",
              repo_owner = "JiaxiangBU",
-             repo_name = "analyze-business-data-sql",
+             repo_name = basename(usethis::proj_path()),
              out_file_path = c(FALSE, here::here("output/tmp.Rmd")),
              set_number = 1) {
         if (url %>% stringr::str_detect(github_url_prefix())) {
