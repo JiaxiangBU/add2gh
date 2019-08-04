@@ -5,6 +5,7 @@
 
 <!-- badges: start -->
 
+[![DOI](https://zenodo.org/badge/190434114.svg)](https://zenodo.org/badge/latestdoi/190434114)
 <!-- badges: end -->
 
 The goal of add2gh is to help R users collect data from
