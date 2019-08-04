@@ -40,3 +40,31 @@ suppressWarnings(collect_comments("https://github.com/JiaxiangBU/add2gh/issues/2
 #> 
 #> Test Comments
 ```
+
+-----
+
+<h4 align="center">
+
+**Code of Conduct**
+
+</h4>
+
+<h6 align="center">
+
+Please note that the `add2gh` project is released with a [Contributor
+Code of Conduct](.github/CODE_OF_CONDUCT.md).<br>By contributing to this
+project, you agree to abide by its terms.
+
+</h6>
+
+<h4 align="center">
+
+**License**
+
+</h4>
+
+<h6 align="center">
+
+MIT © [Jiaxiang Li](LICENSE.md)
+
+</h6>

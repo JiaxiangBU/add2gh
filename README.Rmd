@@ -43,3 +43,6 @@ library(add2gh)
 suppressWarnings(collect_comments("https://github.com/JiaxiangBU/add2gh/issues/2"))
 ```
 
+***
+
+`r add2pkg::add_disclaimer("Jiaxiang Li")`

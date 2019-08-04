@@ -1,14 +1,14 @@
 Package: add2gh
-Title: What the Package Does (One Line, Title Case)
+Title: Write R functions related to GitHub API to extract data from GitHub.
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
+Authors@R:
+    person(given = "Jiaxiang",
+           family = "Li",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: What license it uses
+           email = "alex.lijiaxiang@foxmail.com",
+           comment = c(ORCID = "https://orcid.org/0000-0003-3196-6492"))
+Description: Write R functions related to GitHub API to extract data from GitHub.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
