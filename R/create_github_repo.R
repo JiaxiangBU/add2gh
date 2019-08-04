@@ -32,5 +32,8 @@ create_github_repo <- function(repo_name, is_project, private_token = private_to
     if(!file.exists(bib_path)) {
       file.create(bib_path)
     }
+    if(!dir.exists(dirname(bib_path))) {
+      dir.create(dirname(bib_path))
+    }
     print("the git code to push github on the clipboard!")
 }
