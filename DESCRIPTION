@@ -1,5 +1,5 @@
 Package: add2gh
-Title: Write R functions related to GitHub API to extract data from GitHub.
+Title: Add To GitHub
 Version: 0.1.0
 Authors@R:
     person(given = "Jiaxiang",
@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "alex.lijiaxiang@foxmail.com",
            comment = c(ORCID = "https://orcid.org/0000-0003-3196-6492"))
-Description: Write R functions related to GitHub API to extract data from GitHub.
+Description: Use GitHub API with R.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
