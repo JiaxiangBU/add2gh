@@ -8,8 +8,8 @@
 [![DOI](https://zenodo.org/badge/190434114.svg)](https://zenodo.org/badge/latestdoi/190434114)
 <!-- badges: end -->
 
-The goal of add2gh is to use GitHub API with
-R.
+The goal of add2gh is to use GitHub API with R. If you use GitLab, use
+[add2gl](https://github.com/JiaxiangBU/add2gl).
 
 ## Installation
 
