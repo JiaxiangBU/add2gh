@@ -42,6 +42,28 @@ suppressWarnings(collect_comments("https://github.com/JiaxiangBU/add2gh/issues/2
 #> Test Comments
 ```
 
+## Citations
+
+Jiaxiang Li. (2019, August 4). JiaxiangBU/add2gh: add2gh 0.1.0 (Version
+v0.1.0). Zenodo. <http://doi.org/10.5281/zenodo.3359736>
+
+``` bibtex
+@misc{jiaxiang_li_2019_3359736,
+  author       = {Jiaxiang Li},
+  title        = {JiaxiangBU/add2gh: add2gh 0.1.0},
+  month        = aug,
+  year         = 2019,
+  doi          = {10.5281/zenodo.3359736},
+  url          = {https://doi.org/10.5281/zenodo.3359736}
+}
+```
+
+If you use add2gh, I would be very grateful if you can add a citation in
+your published work. By citing add2gh, beyond acknowledging the work,
+you contribute to make it more visible and guarantee its growing and
+sustainability. For citation, please use the BibTex or the citation
+content.
+
 -----
 
 <h4 align="center">
