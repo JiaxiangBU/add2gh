@@ -3,4 +3,6 @@
 export("%>%")
 export(collect_comments)
 export(create_github_repo)
+importFrom(dplyr,pull)
+importFrom(dplyr,summarise)
 importFrom(magrittr,"%>%")

@@ -1,3 +1,4 @@
+#' @importFrom dplyr summarise pull
 #' @export
 collect_comments <-
     function(url = "https://github.com/JiaxiangBU/add2gh/issues/2",
@@ -28,8 +29,8 @@ collect_comments <-
 
         text <- bind_rows(body %>% select(body),
                           comments %>% select(body)) %>%
-            summarise(str_flatten(body, "\n\n")) %>%
-            pull
+            dplyr::summarise(str_flatten(body, "\n\n")) %>%
+            dplyr::pull()
 
         if (out_file_path == FALSE) {
             clipr::write_clip(text, allow_non_interactive = TRUE)
