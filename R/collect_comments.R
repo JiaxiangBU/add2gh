@@ -24,8 +24,11 @@ collect_comments <-
         repo <- create_repo_ref(repo_owner, repo_name)
         body <-
             get_issues(repo, state = "all") %>% parse_issues() %>% filter(number == set_number)
-        comments <-
+        comments <- if (get_issue_comments(repo, number = set_number) == "") {
+            data.frame(body = "")
+        } else {
             get_issue_comments(repo, number = set_number) %>% parse_issue_comments()
+        }
 
         text <- bind_rows(body %>% select(body),
                           comments %>% select(body)) %>%
@@ -35,6 +38,7 @@ collect_comments <-
         if (out_file_path == FALSE) {
             clipr::write_clip(text, allow_non_interactive = TRUE)
             cat(text)
+            invisible(text)
         } else {
             text %>% write_file(out_file_path)
         }
