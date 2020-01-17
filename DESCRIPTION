@@ -17,11 +17,8 @@ Imports:
     magrittr,
     dplyr,
     clipr,
-    devtools,
     here,
     projmgr,
     sessioninfo,
     stringr,
-    glue,
-    fs,
     readr
