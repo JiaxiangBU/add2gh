@@ -2,7 +2,11 @@
 
 export("%>%")
 export(collect_comments)
-export(create_github_repo)
+import(clipr)
+import(here)
+import(projmgr)
+import(sessioninfo)
+import(stringr)
 importFrom(dplyr,pull)
 importFrom(dplyr,summarise)
 importFrom(magrittr,"%>%")

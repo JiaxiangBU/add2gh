@@ -1,4 +1,17 @@
+globalVariables(c(".", "number"))
+
+#' Collect the body and comments from a Github issue
 #' @importFrom dplyr summarise pull
+#' @import clipr
+#' @import here
+#' @import sessioninfo
+#' @import stringr
+#' @import projmgr
+#' @param url The Github issue url.
+#' @param repo_owner The Github id of this repository.
+#' @param repo_name The Github repository name.
+#' @param out_file_path The saved path.
+#' @param set_number The Github issue number.
 #' @export
 collect_comments <-
     function(url = "https://github.com/JiaxiangBU/add2gh/issues/2",
@@ -20,18 +33,18 @@ collect_comments <-
             here::here("../imp_rmd/R/load.R")
         }
         suppressWarnings(suppressMessages(source(load_path)))
-        library(projmgr)
+        # library(projmgr)
         repo <- create_repo_ref(repo_owner, repo_name)
         body <-
-            get_issues(repo, state = "all") %>% parse_issues() %>% filter(number == set_number)
-        comments <- if (get_issue_comments(repo, number = set_number) == "") {
+            projmgr::get_issues(repo, state = "all") %>% projmgr::parse_issues() %>% dplyr::filter(number == set_number)
+        comments <- if (projmgr::get_issue_comments(repo, number = set_number) == "") {
             data.frame(body = "")
         } else {
-            get_issue_comments(repo, number = set_number) %>% parse_issue_comments()
+            projmgr::get_issue_comments(repo, number = set_number) %>% projmgr::parse_issue_comments()
         }
 
-        text <- bind_rows(body %>% select(body),
-                          comments %>% select(body)) %>%
+        text <- dplyr::bind_rows(body %>% dplyr::select(body),
+                          comments %>% dplyr::select(body)) %>%
             dplyr::summarise(str_flatten(body, "\n\n")) %>%
             dplyr::pull()
 
@@ -40,7 +53,7 @@ collect_comments <-
             cat(text)
             invisible(text)
         } else {
-            text %>% write_file(out_file_path)
+            text %>% readr::write_file(out_file_path)
         }
     }
 
