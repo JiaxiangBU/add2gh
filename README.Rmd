@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 [![DOI](https://zenodo.org/badge/190434114.svg)](https://zenodo.org/badge/latestdoi/190434114)
 <!-- badges: end -->
 
-The goal of add2gh is to use GitHub API with R. If you use GitLab, use [add2gl].
+The goal of add2gh is to use GitHub API with R. If you use Gitlab, use [add2gl].
 
 [add2gl]: https://github.com/JiaxiangBU/add2gl
 
@@ -46,25 +46,3 @@ library(add2gh)
 ```{r}
 suppressWarnings(collect_comments("https://github.com/JiaxiangBU/add2gh/issues/2"))
 ```
-
-## Citations
-
-```{r include=FALSE}
-citations <- add2pkg::add_zenodo_citation("README.Rmd")
-```
-
-```{r echo=FALSE, results='asis'}
-cat(citations$Cite)
-```
-
-```{r echo=FALSE, results='asis'}
-cat(paste0("```BibTex\n",citations$BibTex,"\n```"))
-```
-
-```{r echo=FALSE, results='asis'}
-cat(citations$Comments)
-```
-
-***
-
-`r add2pkg::add_disclaimer("Jiaxiang Li")`
