@@ -7,5 +7,4 @@
 
 0 errors | 0 warnings | 2 note
 
-* Fix mis-spelling.
-* Drop invalid urls.
+* Drop unused imports.
