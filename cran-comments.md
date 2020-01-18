@@ -5,9 +5,9 @@
 
 ## R CMD check results
 
-0 errors | 0 warnings | 3 note
+0 errors | 0 warnings | 1 note
+ 
+  Possibly mis-spelled words in DESCRIPTION:
+    Github (2:15, 10:18)
 
-* Fix mis-spelled words.
-* Add examples, tests, and vignettes.
-* Add examples in the README.
-* Add Travis CI.
+This is not a mis-spelling. 
