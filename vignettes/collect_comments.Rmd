@@ -1,0 +1,24 @@
+---
+title: "Collect Comments"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{collect_comments}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(add2gh)
+```
+
+```{r}
+collect_comments("https://github.com/JiaxiangBU/add2gh/issues/2")
+```
+

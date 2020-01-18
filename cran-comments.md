@@ -7,4 +7,5 @@
 
 0 errors | 0 warnings | 2 note
 
-* Drop unused imports.
+* Fix mis-spelled words.
+* Add examples, tests, and vignettes.

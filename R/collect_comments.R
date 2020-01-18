@@ -13,6 +13,8 @@ globalVariables(c(".", "number"))
 #' @param out_file_path The saved path.
 #' @param set_number The Github issue number.
 #' @export
+#' @examples
+#' collect_comments("https://github.com/JiaxiangBU/add2gh/issues/2")
 collect_comments <-
     function(url = "https://github.com/JiaxiangBU/add2gh/issues/2",
              repo_owner = "JiaxiangBU",
