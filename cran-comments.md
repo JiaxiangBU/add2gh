@@ -5,7 +5,8 @@
 
 ## R CMD check results
 
-0 errors | 0 warnings | 2 note
+0 errors | 0 warnings | 3 note
 
 * Fix mis-spelled words.
 * Add examples, tests, and vignettes.
+* Add examples in the README.

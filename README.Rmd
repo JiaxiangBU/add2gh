@@ -43,6 +43,6 @@ devtools::install_github("JiaxiangBU/add2gh")
 library(add2gh)
 ```
 
-```{r}
-suppressWarnings(collect_comments("https://github.com/JiaxiangBU/add2gh/issues/2"))
+```{r,child="vignettes/collect_comments.Rmd"}
 ```
+

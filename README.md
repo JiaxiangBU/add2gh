@@ -35,9 +35,9 @@ library(add2gh)
 ```
 
 ``` r
-suppressWarnings(collect_comments("https://github.com/JiaxiangBU/add2gh/issues/2"))
-#> Requests will authenticate with GITHUB_PAT
-#> Test Body
-#> 
-#> Test Comments
+library(add2gh)
+```
+
+``` r
+collect_comments("https://github.com/JiaxiangBU/add2gh/issues/2")
 ```

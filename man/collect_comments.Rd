@@ -23,3 +23,6 @@ collect_comments(url = "https://github.com/JiaxiangBU/add2gh/issues/2",
 \description{
 Collect the body and comments from a Github issue
 }
+\examples{
+\dontrun{collect_comments("https://github.com/JiaxiangBU/add2gh/issues/2")}
+}

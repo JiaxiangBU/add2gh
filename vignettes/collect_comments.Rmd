@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 library(add2gh)
 ```
 
-```{r}
+```{r eval=FALSE}
 collect_comments("https://github.com/JiaxiangBU/add2gh/issues/2")
 ```
 
