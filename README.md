@@ -6,6 +6,8 @@
 <!-- badges: start -->
 
 [![DOI](https://zenodo.org/badge/190434114.svg)](https://zenodo.org/badge/latestdoi/190434114)
+[![Travis build
+status](https://travis-ci.org/JiaxiangBU/add2gh.svg?branch=master)](https://travis-ci.org/JiaxiangBU/add2gh)
 <!-- badges: end -->
 
 The goal of add2gh is to use GitHub API with R. If you use Gitlab, use

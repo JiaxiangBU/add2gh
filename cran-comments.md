@@ -10,3 +10,4 @@
 * Fix mis-spelled words.
 * Add examples, tests, and vignettes.
 * Add examples in the README.
+* Add Travis CI.
