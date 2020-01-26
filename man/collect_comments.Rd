@@ -20,9 +20,12 @@ collect_comments(url = "https://github.com/JiaxiangBU/add2gh/issues/2",
 
 \item{set_number}{The Github issue number.}
 }
+\value{
+The comments from a specific issue.
+}
 \description{
 Collect the body and comments from a Github issue
 }
 \examples{
-\dontrun{collect_comments("https://github.com/JiaxiangBU/add2gh/issues/2")}
+\donttest{collect_comments("https://github.com/JiaxiangBU/add2gh/issues/2")}
 }

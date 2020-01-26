@@ -8,3 +8,4 @@
 ^docs$
 ^cran-comments\.md$
 ^\.travis\.yml$
+^dev_history_r_pkg\.R$

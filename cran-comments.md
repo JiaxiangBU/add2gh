@@ -5,9 +5,8 @@
 
 ## R CMD check results
 
-0 errors | 0 warnings | 1 note
- 
-  Possibly mis-spelled words in DESCRIPTION:
-    Github (2:15, 10:18)
+0 errors | 0 warnings | 3 note
 
-This is not a mis-spelling. 
+* Fix the 'GitHub' into single quote in the title and description.
+* Update the year of the LICENSE.
+* Use 'donttest' instead of 'dontrun' into the functions.

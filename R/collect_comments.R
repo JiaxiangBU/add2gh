@@ -12,9 +12,10 @@ globalVariables(c(".", "number"))
 #' @param repo_name The Github repository name.
 #' @param out_file_path The saved path.
 #' @param set_number The Github issue number.
+#' @return The comments from a specific issue.
 #' @export
 #' @examples
-#' \dontrun{collect_comments("https://github.com/JiaxiangBU/add2gh/issues/2")}
+#' \donttest{collect_comments("https://github.com/JiaxiangBU/add2gh/issues/2")}
 collect_comments <-
     function(url = "https://github.com/JiaxiangBU/add2gh/issues/2",
              repo_owner = "JiaxiangBU",
